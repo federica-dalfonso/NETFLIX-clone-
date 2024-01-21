@@ -1,0 +1,128 @@
+/*global settings*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #141414;
+}
+
+.container-fluid {
+    width: 95%;
+}
+
+/*NAVBAR*/
+.bg-dark {
+    background-color: #141414 !important;
+}
+
+img.logo-size {
+    width: 4em;
+}
+
+.font-size {
+    font-size: 0.8rem;
+}
+
+button.dropdown-toggle img.user-size {
+    width: 2em;
+}
+
+button {
+    background-color: #141414;
+    border-style: none;
+}
+
+#dropdownUserProfile ~ ul {
+    left: -200%;
+    text-align: center;
+}
+
+.navbar-toggler:focus {
+    box-shadow: #85858564 0px 1px 4px;
+}
+
+/*subNAV*/
+.padding-fixed {
+    padding-top: 3.8em;
+}
+
+#tvShows + button::after {
+    margin-left: 1.2em;
+}
+
+.dropdown-item:hover {
+    background-color: #858585;
+}
+
+.border-color {
+    border-color: #858585 !important;
+}
+
+.dropdown a:hover {
+    background-color: #85858536;
+}
+
+/*CARDS ANIMATIONS*/
+div.card:hover {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.zoom-in {
+transform: scale(1.2);
+z-index: 1;
+}
+
+
+.carousel-inner:hover {
+overflow: visible;
+}
+
+/*CAROUSEL*/
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(18%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-18%);
+    }
+}
+
+.carousel-inner,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 2.5em;
+}
+
+/*FOOTER*/
+footer {
+    margin-top: 7em;
+}
+
+footer, footer .fa-brands {
+    color: #858585;
+}
+
+footer a {
+    text-decoration: none;    
+}
+
+.container {
+    width: 75%;
+}
